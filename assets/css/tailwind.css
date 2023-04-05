@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Paralucent';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/Paralucent-Text-W00-Book.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/Helvetica.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/Helvetica-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Paralucent';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/Paralucent-Text-W00-Book.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Paralucent';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/Paralucent-W00-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Thin.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-ExtraLight.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-SemiBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('~/assets/fonts/Inter-Black.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaProLight-webfont.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaProRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaProMedium-webfont.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaPro-SemiBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaPro-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('~/assets/fonts/SofiaPro-Black.ttf') format('truetype');
+  }
+
+  html {
+    font-family: 'Sofia', sans-serif;
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
+  }
+}
+
+.animation-appear {
+  transition: all 0.5s ease;
+}
+
+.required::after {
+  content: ' *';
+}
+
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.text-gradient {
+  /* Gradient Primary */
+  background: linear-gradient(113.08deg, #f10f47 2.17%, #ff4775 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.shaddow-custom {
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.11),
+    0px 3px 10px rgba(0, 10, 46, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.rotate-animation {
+  animation: rotation 2s infinite linear;
+}
+
+.showError {
+  animation: showError 2s;
+}
+
+.animateFromBottom {
+  animation: animateFromBottom 2s;
+}
+
+@keyframes animateFromBottom {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.appaer {
+  animation: appaer 500ms;
+}
+
+@keyframes appaer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showError {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.text-mask {
+  background: linear-gradient(113.08deg, #f10f47 2.17%, #ff4775 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 0.5s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
+}
+
+.leadingBackground {
+  background: linear-gradient(0deg, #000239, #000239);
+  background-blend-mode: hard-light, normal;
+}
+
+.leadingBackgroundImage {
+  background: url('/photoback.png');
+  background-blend-mode: hard-light, normal;
+  background-repeat: no-repeat;
+  aspect-ratio: 2/3;
+  background-size: 100% 690.16px;
+}
+
+.disc {
+  @apply !list-disc;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
